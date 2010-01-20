@@ -1,0 +1,652 @@
+Unable to load syntaxis, underlying cause no such file to load -- syntaxis 
+
+ /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:158:in `require'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:265:in `require_or_load'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:224:in `depend_on'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:136:in `require_dependency'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:853:in `try_to_load_dependency'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:868:in `require_fixture_classes'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:865:in `each'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:865:in `require_fixture_classes'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:848:in `fixtures'
+./test/test_helper.rb:8
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+./test/unit/hashtag_test.rb:1
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/rake-0.8.7/lib/rake/rake_test_loader.rb:5:in `load'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/rake-0.8.7/lib/rake/rake_test_loader.rb:5
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/rake-0.8.7/lib/rake/rake_test_loader.rb:5:in `each'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/rake-0.8.7/lib/rake/rake_test_loader.rb:5
+Unable to load syntaxis, underlying cause no such file to load -- syntaxis 
+
+ /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:158:in `require'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:265:in `require_or_load'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:224:in `depend_on'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:136:in `require_dependency'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:853:in `try_to_load_dependency'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:868:in `require_fixture_classes'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:865:in `each'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:865:in `require_fixture_classes'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:848:in `fixtures'
+/Users/jbr/code/TtT/follow-that-bird/test/test_helper.rb:8
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+/Users/jbr/code/TtT/follow-that-bird/test/unit/hashtag_test.rb:1
+  [4;36;1mHashtag Create (0.4ms)[0m   [0;1mINSERT INTO "hashtags" ("updated_at", "tag", "created_at") VALUES('2010-01-20 07:07:59', 'hello', '2010-01-20 07:07:59')[0m
+  [4;35;1mHashtag Create (0.1ms)[0m   [0mINSERT INTO "hashtags" ("updated_at", "tag", "created_at") VALUES('2010-01-20 07:07:59', 'twitter', '2010-01-20 07:07:59')[0m
+  [4;36;1mHashtag Create (0.1ms)[0m   [0;1mINSERT INTO "hashtags" ("updated_at", "tag", "created_at") VALUES('2010-01-20 07:07:59', 'world', '2010-01-20 07:07:59')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+Unable to load syntaxis, underlying cause no such file to load -- syntaxis 
+
+ /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:158:in `require'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:265:in `require_or_load'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:224:in `depend_on'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:136:in `require_dependency'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:853:in `try_to_load_dependency'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:868:in `require_fixture_classes'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:865:in `each'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:865:in `require_fixture_classes'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:848:in `fixtures'
+/Users/jbr/code/TtT/follow-that-bird/test/test_helper.rb:8
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+/Users/jbr/code/TtT/follow-that-bird/test/unit/hashtag_test.rb:1
+  [4;36;1mHashtag Create (0.4ms)[0m   [0;1mINSERT INTO "hashtags" ("updated_at", "tag", "created_at") VALUES('2010-01-20 07:09:18', 'hello', '2010-01-20 07:09:18')[0m
+  [4;35;1mHashtag Create (0.1ms)[0m   [0mINSERT INTO "hashtags" ("updated_at", "tag", "created_at") VALUES('2010-01-20 07:09:18', 'twitter', '2010-01-20 07:09:18')[0m
+  [4;36;1mHashtag Create (0.1ms)[0m   [0;1mINSERT INTO "hashtags" ("updated_at", "tag", "created_at") VALUES('2010-01-20 07:09:18', 'world', '2010-01-20 07:09:18')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+Unable to load syntaxis, underlying cause no such file to load -- syntaxis 
+
+ /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:158:in `require'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:265:in `require_or_load'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:224:in `depend_on'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:136:in `require_dependency'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:853:in `try_to_load_dependency'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:868:in `require_fixture_classes'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:865:in `each'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:865:in `require_fixture_classes'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:848:in `fixtures'
+/Users/jbr/code/TtT/follow-that-bird/test/test_helper.rb:8
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+/Users/jbr/code/TtT/follow-that-bird/test/unit/hashtag_test.rb:1
+  [4;36;1mHashtag Create (0.4ms)[0m   [0;1mINSERT INTO "hashtags" ("updated_at", "tag", "created_at") VALUES('2010-01-20 07:09:50', 'hello', '2010-01-20 07:09:50')[0m
+  [4;35;1mHashtag Create (0.1ms)[0m   [0mINSERT INTO "hashtags" ("updated_at", "tag", "created_at") VALUES('2010-01-20 07:09:50', 'twitter', '2010-01-20 07:09:50')[0m
+  [4;36;1mHashtag Create (0.1ms)[0m   [0;1mINSERT INTO "hashtags" ("updated_at", "tag", "created_at") VALUES('2010-01-20 07:09:50', 'world', '2010-01-20 07:09:50')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+Unable to load syntaxis, underlying cause no such file to load -- syntaxis 
+
+ /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:158:in `require'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:265:in `require_or_load'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:224:in `depend_on'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:136:in `require_dependency'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:853:in `try_to_load_dependency'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:868:in `require_fixture_classes'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:865:in `each'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:865:in `require_fixture_classes'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:848:in `fixtures'
+/Users/jbr/code/TtT/follow-that-bird/test/test_helper.rb:8
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+/Users/jbr/code/TtT/follow-that-bird/test/unit/hashtag_test.rb:1
+  [4;36;1mHashtag Create (0.3ms)[0m   [0;1mINSERT INTO "hashtags" ("updated_at", "tag", "created_at") VALUES('2010-01-20 07:10:15', 'hello', '2010-01-20 07:10:15')[0m
+  [4;35;1mHashtag Create (0.1ms)[0m   [0mINSERT INTO "hashtags" ("updated_at", "tag", "created_at") VALUES('2010-01-20 07:10:15', 'twitter', '2010-01-20 07:10:15')[0m
+  [4;36;1mHashtag Create (0.1ms)[0m   [0;1mINSERT INTO "hashtags" ("updated_at", "tag", "created_at") VALUES('2010-01-20 07:10:15', 'world', '2010-01-20 07:10:15')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+Unable to load syntaxis, underlying cause no such file to load -- syntaxis 
+
+ /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:158:in `require'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:265:in `require_or_load'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:224:in `depend_on'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:136:in `require_dependency'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:853:in `try_to_load_dependency'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:868:in `require_fixture_classes'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:865:in `each'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:865:in `require_fixture_classes'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:848:in `fixtures'
+/Users/jbr/code/TtT/follow-that-bird/test/test_helper.rb:8
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+/Users/jbr/code/TtT/follow-that-bird/test/unit/hashtag_test.rb:1
+  [4;36;1mHashtag Create (0.4ms)[0m   [0;1mINSERT INTO "hashtags" ("updated_at", "tag", "created_at") VALUES('2010-01-20 07:11:16', 'hello', '2010-01-20 07:11:16')[0m
+  [4;35;1mHashtag Create (0.1ms)[0m   [0mINSERT INTO "hashtags" ("updated_at", "tag", "created_at") VALUES('2010-01-20 07:11:16', 'twitter', '2010-01-20 07:11:16')[0m
+  [4;36;1mHashtag Create (0.1ms)[0m   [0;1mINSERT INTO "hashtags" ("updated_at", "tag", "created_at") VALUES('2010-01-20 07:11:16', 'world', '2010-01-20 07:11:16')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+Unable to load syntaxis, underlying cause no such file to load -- syntaxis 
+
+ /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:158:in `require'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:265:in `require_or_load'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:224:in `depend_on'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:136:in `require_dependency'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:853:in `try_to_load_dependency'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:868:in `require_fixture_classes'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:865:in `each'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:865:in `require_fixture_classes'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:848:in `fixtures'
+/Users/jbr/code/TtT/follow-that-bird/test/test_helper.rb:8
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+/Users/jbr/code/TtT/follow-that-bird/test/unit/hashtag_test.rb:1
+  [4;36;1mHashtag Create (0.4ms)[0m   [0;1mINSERT INTO "hashtags" ("updated_at", "tag", "created_at") VALUES('2010-01-20 07:11:34', 'hello', '2010-01-20 07:11:34')[0m
+  [4;35;1mHashtag Create (0.1ms)[0m   [0mINSERT INTO "hashtags" ("updated_at", "tag", "created_at") VALUES('2010-01-20 07:11:34', 'twitter', '2010-01-20 07:11:34')[0m
+  [4;36;1mHashtag Create (0.1ms)[0m   [0;1mINSERT INTO "hashtags" ("updated_at", "tag", "created_at") VALUES('2010-01-20 07:11:34', 'world', '2010-01-20 07:11:34')[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.3ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+Unable to load syntaxis, underlying cause no such file to load -- syntaxis 
+
+ /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:158:in `require'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:265:in `require_or_load'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:224:in `depend_on'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:136:in `require_dependency'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:853:in `try_to_load_dependency'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:868:in `require_fixture_classes'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:865:in `each'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:865:in `require_fixture_classes'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:848:in `fixtures'
+/Users/jbr/code/TtT/follow-that-bird/test/test_helper.rb:9
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+/Users/jbr/code/TtT/follow-that-bird/test/unit/hashtag_test.rb:1
+  [4;36;1mHashtag Create (0.4ms)[0m   [0;1mINSERT INTO "hashtags" ("updated_at", "tag", "created_at") VALUES('2010-01-20 07:12:10', 'hello', '2010-01-20 07:12:10')[0m
+  [4;35;1mHashtag Create (0.1ms)[0m   [0mINSERT INTO "hashtags" ("updated_at", "tag", "created_at") VALUES('2010-01-20 07:12:10', 'twitter', '2010-01-20 07:12:10')[0m
+  [4;36;1mHashtag Create (0.1ms)[0m   [0;1mINSERT INTO "hashtags" ("updated_at", "tag", "created_at") VALUES('2010-01-20 07:12:10', 'world', '2010-01-20 07:12:10')[0m
+Unable to load syntaxis, underlying cause no such file to load -- syntaxis 
+
+ /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:158:in `require'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:265:in `require_or_load'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:224:in `depend_on'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:136:in `require_dependency'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:853:in `try_to_load_dependency'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:868:in `require_fixture_classes'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:865:in `each'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:865:in `require_fixture_classes'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:848:in `fixtures'
+/Users/jbr/code/TtT/follow-that-bird/test/test_helper.rb:9
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+/Users/jbr/code/TtT/follow-that-bird/test/unit/hashtag_test.rb:1
+  [4;36;1mHashtag Create (0.4ms)[0m   [0;1mINSERT INTO "hashtags" ("updated_at", "tag", "created_at") VALUES('2010-01-20 07:12:21', 'hello', '2010-01-20 07:12:21')[0m
+  [4;35;1mHashtag Create (0.1ms)[0m   [0mINSERT INTO "hashtags" ("updated_at", "tag", "created_at") VALUES('2010-01-20 07:12:21', 'twitter', '2010-01-20 07:12:21')[0m
+  [4;36;1mHashtag Create (0.1ms)[0m   [0;1mINSERT INTO "hashtags" ("updated_at", "tag", "created_at") VALUES('2010-01-20 07:12:21', 'world', '2010-01-20 07:12:21')[0m
+Unable to load syntaxis, underlying cause no such file to load -- syntaxis 
+
+ /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:158:in `require'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:265:in `require_or_load'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:224:in `depend_on'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:136:in `require_dependency'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:853:in `try_to_load_dependency'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:868:in `require_fixture_classes'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:865:in `each'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:865:in `require_fixture_classes'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:848:in `fixtures'
+/Users/jbr/code/TtT/follow-that-bird/test/test_helper.rb:9
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+/Users/jbr/code/TtT/follow-that-bird/test/unit/hashtag_test.rb:1
+  [4;36;1mHashtag Load (0.2ms)[0m   [0;1mSELECT "hashtags".id FROM "hashtags" WHERE ("hashtags"."tag" = 'hello') LIMIT 1[0m
+  [4;35;1mHashtag Create (0.3ms)[0m   [0mINSERT INTO "hashtags" ("updated_at", "tag", "created_at") VALUES('2010-01-20 07:12:42', 'hello', '2010-01-20 07:12:42')[0m
+  [4;36;1mHashtag Load (0.1ms)[0m   [0;1mSELECT "hashtags".id FROM "hashtags" WHERE ("hashtags"."tag" = 'twitter') LIMIT 1[0m
+  [4;35;1mHashtag Create (0.1ms)[0m   [0mINSERT INTO "hashtags" ("updated_at", "tag", "created_at") VALUES('2010-01-20 07:12:42', 'twitter', '2010-01-20 07:12:42')[0m
+  [4;36;1mHashtag Load (0.1ms)[0m   [0;1mSELECT "hashtags".id FROM "hashtags" WHERE ("hashtags"."tag" = 'world') LIMIT 1[0m
+  [4;35;1mHashtag Create (0.1ms)[0m   [0mINSERT INTO "hashtags" ("updated_at", "tag", "created_at") VALUES('2010-01-20 07:12:42', 'world', '2010-01-20 07:12:42')[0m
+  [4;36;1mHashtag Load (0.1ms)[0m   [0;1mSELECT "hashtags".id FROM "hashtags" WHERE ("hashtags"."tag" = 'twitter') LIMIT 1[0m
+Unable to load syntaxis, underlying cause no such file to load -- syntaxis 
+
+ /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:158:in `require'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:265:in `require_or_load'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:224:in `depend_on'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:136:in `require_dependency'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:853:in `try_to_load_dependency'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:868:in `require_fixture_classes'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:865:in `each'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:865:in `require_fixture_classes'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:848:in `fixtures'
+/Users/jbr/code/TtT/follow-that-bird/test/test_helper.rb:9
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+/Users/jbr/code/TtT/follow-that-bird/test/unit/syntax_test.rb:1
+Unable to load syntaxis, underlying cause no such file to load -- syntaxis 
+
+ /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:158:in `require'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:265:in `require_or_load'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:224:in `depend_on'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:136:in `require_dependency'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:853:in `try_to_load_dependency'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:868:in `require_fixture_classes'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:865:in `each'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:865:in `require_fixture_classes'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:848:in `fixtures'
+/Users/jbr/code/TtT/follow-that-bird/test/test_helper.rb:9
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+/Users/jbr/code/TtT/follow-that-bird/test/unit/syntax_test.rb:1
+Unable to load syntaxis, underlying cause no such file to load -- syntaxis 
+
+ /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:158:in `require'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:265:in `require_or_load'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:224:in `depend_on'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:136:in `require_dependency'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:853:in `try_to_load_dependency'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:868:in `require_fixture_classes'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:865:in `each'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:865:in `require_fixture_classes'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:848:in `fixtures'
+/Users/jbr/code/TtT/follow-that-bird/test/test_helper.rb:9
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+/Users/jbr/code/TtT/follow-that-bird/test/unit/syntax_test.rb:1
+Unable to load syntaxis, underlying cause no such file to load -- syntaxis 
+
+ /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:158:in `require'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:265:in `require_or_load'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:224:in `depend_on'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:136:in `require_dependency'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:853:in `try_to_load_dependency'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:868:in `require_fixture_classes'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:865:in `each'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:865:in `require_fixture_classes'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:848:in `fixtures'
+/Users/jbr/code/TtT/follow-that-bird/test/test_helper.rb:9
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+/Users/jbr/code/TtT/follow-that-bird/test/unit/syntax_test.rb:1
+Unable to load syntaxis, underlying cause no such file to load -- syntaxis 
+
+ /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:158:in `require'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:265:in `require_or_load'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:224:in `depend_on'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:136:in `require_dependency'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:853:in `try_to_load_dependency'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:868:in `require_fixture_classes'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:865:in `each'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:865:in `require_fixture_classes'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:848:in `fixtures'
+/Users/jbr/code/TtT/follow-that-bird/test/test_helper.rb:9
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+/Users/jbr/code/TtT/follow-that-bird/test/unit/syntax_test.rb:1
+Unable to load syntaxis, underlying cause no such file to load -- syntaxis 
+
+ /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:158:in `require'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:265:in `require_or_load'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:224:in `depend_on'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:136:in `require_dependency'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:853:in `try_to_load_dependency'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:868:in `require_fixture_classes'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:865:in `each'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:865:in `require_fixture_classes'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:848:in `fixtures'
+/Users/jbr/code/TtT/follow-that-bird/test/test_helper.rb:9
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+/Users/jbr/code/TtT/follow-that-bird/test/unit/syntax_test.rb:1
+Unable to load syntaxis, underlying cause no such file to load -- syntaxis 
+
+ /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:158:in `require'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:265:in `require_or_load'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:224:in `depend_on'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:136:in `require_dependency'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:853:in `try_to_load_dependency'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:868:in `require_fixture_classes'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:865:in `each'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:865:in `require_fixture_classes'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:848:in `fixtures'
+/Users/jbr/code/TtT/follow-that-bird/test/test_helper.rb:9
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+/Users/jbr/code/TtT/follow-that-bird/test/unit/syntax_test.rb:1
+Unable to load syntaxis, underlying cause no such file to load -- syntaxis 
+
+ /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:158:in `require'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:265:in `require_or_load'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:224:in `depend_on'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:136:in `require_dependency'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:853:in `try_to_load_dependency'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:868:in `require_fixture_classes'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:865:in `each'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:865:in `require_fixture_classes'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:848:in `fixtures'
+/Users/jbr/code/TtT/follow-that-bird/test/test_helper.rb:9
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+/Users/jbr/code/TtT/follow-that-bird/test/unit/syntax_test.rb:1
+Unable to load syntaxis, underlying cause no such file to load -- syntaxis 
+
+ /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:158:in `require'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:265:in `require_or_load'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:224:in `depend_on'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:136:in `require_dependency'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:853:in `try_to_load_dependency'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:868:in `require_fixture_classes'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:865:in `each'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:865:in `require_fixture_classes'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:848:in `fixtures'
+/Users/jbr/code/TtT/follow-that-bird/test/test_helper.rb:9
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+/Users/jbr/code/TtT/follow-that-bird/test/unit/syntax_test.rb:1
+Unable to load syntaxis, underlying cause no such file to load -- syntaxis 
+
+ /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:158:in `require'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:265:in `require_or_load'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:224:in `depend_on'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:136:in `require_dependency'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:853:in `try_to_load_dependency'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:868:in `require_fixture_classes'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:865:in `each'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:865:in `require_fixture_classes'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:848:in `fixtures'
+/Users/jbr/code/TtT/follow-that-bird/test/test_helper.rb:9
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+/Users/jbr/code/TtT/follow-that-bird/test/unit/syntax_test.rb:1
+Unable to load syntaxis, underlying cause no such file to load -- syntaxis 
+
+ /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:158:in `require'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:265:in `require_or_load'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:224:in `depend_on'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:136:in `require_dependency'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:853:in `try_to_load_dependency'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:868:in `require_fixture_classes'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:865:in `each'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:865:in `require_fixture_classes'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:848:in `fixtures'
+/Users/jbr/code/TtT/follow-that-bird/test/test_helper.rb:9
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+/Users/jbr/code/TtT/follow-that-bird/test/unit/syntax_test.rb:1
+Unable to load syntaxis, underlying cause no such file to load -- syntaxis 
+
+ /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:158:in `require'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:265:in `require_or_load'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:224:in `depend_on'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:136:in `require_dependency'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:853:in `try_to_load_dependency'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:868:in `require_fixture_classes'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:865:in `each'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:865:in `require_fixture_classes'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:848:in `fixtures'
+/Users/jbr/code/TtT/follow-that-bird/test/test_helper.rb:9
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+/Users/jbr/code/TtT/follow-that-bird/test/unit/syntax_test.rb:1
+Unable to load syntaxis, underlying cause no such file to load -- syntaxis 
+
+ /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:158:in `require'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:265:in `require_or_load'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:224:in `depend_on'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:136:in `require_dependency'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:853:in `try_to_load_dependency'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:868:in `require_fixture_classes'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:865:in `each'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:865:in `require_fixture_classes'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:848:in `fixtures'
+/Users/jbr/code/TtT/follow-that-bird/test/test_helper.rb:9
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+/Users/jbr/code/TtT/follow-that-bird/test/unit/syntax_test.rb:1
+Unable to load syntaxis, underlying cause no such file to load -- syntaxis 
+
+ /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:158:in `require'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:265:in `require_or_load'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:224:in `depend_on'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:136:in `require_dependency'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:853:in `try_to_load_dependency'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:868:in `require_fixture_classes'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:865:in `each'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:865:in `require_fixture_classes'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:848:in `fixtures'
+/Users/jbr/code/TtT/follow-that-bird/test/test_helper.rb:9
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+/Users/jbr/code/TtT/follow-that-bird/test/unit/syntax_test.rb:1
+Unable to load syntaxis, underlying cause no such file to load -- syntaxis 
+
+ /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:158:in `require'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:265:in `require_or_load'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:224:in `depend_on'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:136:in `require_dependency'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:853:in `try_to_load_dependency'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:868:in `require_fixture_classes'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:865:in `each'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:865:in `require_fixture_classes'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:848:in `fixtures'
+/Users/jbr/code/TtT/follow-that-bird/test/test_helper.rb:9
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+/Users/jbr/code/TtT/follow-that-bird/test/unit/syntax_test.rb:1
+Unable to load syntaxis, underlying cause no such file to load -- syntaxis 
+
+ /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:158:in `require'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:265:in `require_or_load'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:224:in `depend_on'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:136:in `require_dependency'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:853:in `try_to_load_dependency'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:868:in `require_fixture_classes'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:865:in `each'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:865:in `require_fixture_classes'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:848:in `fixtures'
+/Users/jbr/code/TtT/follow-that-bird/test/test_helper.rb:9
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+/Users/jbr/code/TtT/follow-that-bird/test/unit/syntax_test.rb:1
+Unable to load syntaxis, underlying cause no such file to load -- syntaxis 
+
+ /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:158:in `require'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:265:in `require_or_load'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:224:in `depend_on'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:136:in `require_dependency'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:853:in `try_to_load_dependency'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:868:in `require_fixture_classes'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:865:in `each'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:865:in `require_fixture_classes'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:848:in `fixtures'
+/Users/jbr/code/TtT/follow-that-bird/test/test_helper.rb:9
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+/Users/jbr/code/TtT/follow-that-bird/test/unit/syntax_test.rb:1
+Unable to load syntaxis, underlying cause no such file to load -- syntaxis 
+
+ /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:158:in `require'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:265:in `require_or_load'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:224:in `depend_on'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:136:in `require_dependency'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:853:in `try_to_load_dependency'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:868:in `require_fixture_classes'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:865:in `each'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:865:in `require_fixture_classes'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:848:in `fixtures'
+/Users/jbr/code/TtT/follow-that-bird/test/test_helper.rb:9
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+/Users/jbr/code/TtT/follow-that-bird/test/unit/syntax_test.rb:1
+Unable to load syntaxis, underlying cause no such file to load -- syntaxis 
+
+ /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:158:in `require'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:265:in `require_or_load'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:224:in `depend_on'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:136:in `require_dependency'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:853:in `try_to_load_dependency'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:868:in `require_fixture_classes'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:865:in `each'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:865:in `require_fixture_classes'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:848:in `fixtures'
+/Users/jbr/code/TtT/follow-that-bird/test/test_helper.rb:9
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+/Users/jbr/code/TtT/follow-that-bird/test/unit/syntax_test.rb:1
+Unable to load syntaxis, underlying cause no such file to load -- syntaxis 
+
+ /Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:158:in `require'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:265:in `require_or_load'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:224:in `depend_on'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activesupport-2.3.5/lib/active_support/dependencies.rb:136:in `require_dependency'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:853:in `try_to_load_dependency'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:868:in `require_fixture_classes'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:865:in `each'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:865:in `require_fixture_classes'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/activerecord-2.3.5/lib/active_record/fixtures.rb:848:in `fixtures'
+./test/test_helper.rb:9
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `gem_original_require'
+/Library/Ruby/Site/1.8/rubygems/custom_require.rb:31:in `require'
+./test/unit/hashtag_test.rb:1
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/rake-0.8.7/lib/rake/rake_test_loader.rb:5:in `load'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/rake-0.8.7/lib/rake/rake_test_loader.rb:5
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/rake-0.8.7/lib/rake/rake_test_loader.rb:5:in `each'
+/Users/jbr/code/TtT/follow-that-bird/vendor/bundler_gems/ruby/1.8/gems/rake-0.8.7/lib/rake/rake_test_loader.rb:5
+  [4;36;1mHashtag Load (0.2ms)[0m   [0;1mSELECT "hashtags".id FROM "hashtags" WHERE ("hashtags"."tag" = 'hello') LIMIT 1[0m
+  [4;35;1mHashtag Create (0.3ms)[0m   [0mINSERT INTO "hashtags" ("updated_at", "tag", "created_at") VALUES('2010-01-20 07:42:51', 'hello', '2010-01-20 07:42:51')[0m
+  [4;36;1mHashtag Load (0.1ms)[0m   [0;1mSELECT "hashtags".id FROM "hashtags" WHERE ("hashtags"."tag" = 'twitter') LIMIT 1[0m
+  [4;35;1mHashtag Create (0.1ms)[0m   [0mINSERT INTO "hashtags" ("updated_at", "tag", "created_at") VALUES('2010-01-20 07:42:51', 'twitter', '2010-01-20 07:42:51')[0m
+  [4;36;1mHashtag Load (0.1ms)[0m   [0;1mSELECT "hashtags".id FROM "hashtags" WHERE ("hashtags"."tag" = 'world') LIMIT 1[0m
+  [4;35;1mHashtag Create (0.1ms)[0m   [0mINSERT INTO "hashtags" ("updated_at", "tag", "created_at") VALUES('2010-01-20 07:42:51', 'world', '2010-01-20 07:42:51')[0m
+  [4;36;1mHashtag Load (0.2ms)[0m   [0;1mSELECT "hashtags".id FROM "hashtags" WHERE ("hashtags"."tag" = 'twitter') LIMIT 1[0m
