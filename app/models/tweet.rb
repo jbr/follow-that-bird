@@ -8,7 +8,7 @@ class Tweet < ActiveRecord::Base
         count += 1
       end
     end
-    puts "added #{count} (total: #{Tweet.count})"
+    puts "added #{count} (total: #{Tweet.count})" if count > 0
   end
   
   
