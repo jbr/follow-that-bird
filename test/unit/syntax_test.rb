@@ -4,6 +4,10 @@ class SyntaxTest < ActiveSupport::TestCase
   context "with a simple syntax" do
     setup {@syntax = Syntax.new :format => "#loc {{location}} #needs {{need}}"}
     
+    should 'be valid' do
+      assert_valid @syntax
+    end
+    
     context 'keys' do
       should 'be "location"' do
         assert_keys [:location, :need], @syntax

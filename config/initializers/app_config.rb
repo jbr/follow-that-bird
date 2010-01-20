@@ -1,0 +1,1 @@
+AppConfig.hash = YAML::load_file(File.expand_path(File.join(RAILS_ROOT, 'config', 'app_config.yml')))
