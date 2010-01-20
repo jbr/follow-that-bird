@@ -5,6 +5,7 @@ doc/api
 doc/app
 public/stylesheets/compiled/*
 config/database.yml
+config/app_config.yml
 db/*.sqlite3
 vendor/bundler_gems/*
 !vendor/bunder_gems/ruby/1.8/cache/
