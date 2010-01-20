@@ -12,4 +12,11 @@ class Tweet < ActiveRecord::Base
       Tweet.create :tweet_id => tweet.id, :text => tweet.text, :from_user => tweet.from_user
     end
   end
+  
+  
+  def self.poll_indefinitely(pause = 2)
+    update_from_twitter
+    sleep pause
+    poll_indefinitely
+  end
 end
