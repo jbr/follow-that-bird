@@ -1,0 +1,13 @@
+log/*.log
+tmp/*
+tmp/**/*
+doc/api
+doc/app
+public/stylesheets/compiled/*
+config/database.yml
+db/*.sqlite3
+vendor/bundler_gems/gems
+vendor/bundler_gems/specifications
+vendor/bundler_gems/doc
+vendor/bundler_gems/environment.rb
+bin
