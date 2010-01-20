@@ -6,8 +6,6 @@ doc/app
 public/stylesheets/compiled/*
 config/database.yml
 db/*.sqlite3
-vendor/bundler_gems/gems
-vendor/bundler_gems/specifications
-vendor/bundler_gems/doc
-vendor/bundler_gems/environment.rb
+vendor/bundler_gems/*
+!vendor/bunder_gems/ruby/1.8/cache/
 bin
