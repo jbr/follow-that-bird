@@ -17,6 +17,7 @@ role :db,  "jacobrothstein.com", :primary => true
 
 
 after 'deploy:symlink', 'deploy:copy_config_files'
+after 'deploy:update_code', 'bundler:bundle_new_release'
 
 namespace :deploy do
   task :copy_config_files do
@@ -35,3 +36,24 @@ namespace :deploy do
     sudo "monit -g ftb stop all"
   end
 end
+
+namespace :bundler do
+  task :install, :roles => :app, :except => { :no_release => true }  do
+    run("gem install bundler --source=http://gemcutter.org")
+  end
+ 
+  task :symlink_vendor, :roles => :app, :except => { :no_release => true } do
+    shared_gems = File.join(shared_path, 'vendor/gems/ruby/1.8')
+    release_gems = "#{release_path}/vendor/gems/ruby/1.8"
+    %w(gems specifications).each do |sub_dir|
+      shared_sub_dir = File.join(shared_gems, sub_dir)
+      run("mkdir -p #{shared_sub_dir} && mkdir -p #{release_gems} && ln -s #{shared_sub_dir} #{release_gems}/#{sub_dir}")
+    end
+  end
+ 
+  task :bundle_new_release, :roles => :app, :except => { :no_release => true }  do
+    bundler.symlink_vendor
+    run("cd #{release_path} && gem bundle --only #{rails_env} --cached")
+  end
+end
+ 
