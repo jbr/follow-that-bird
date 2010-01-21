@@ -13,8 +13,9 @@ class Tweet < ActiveRecord::Base
   
   
   def self.poll_indefinitely(pause = 2)
-    update_from_twitter
-    sleep pause
-    poll_indefinitely
+    loop do
+      update_from_twitter
+      sleep pause
+    end
   end
 end
