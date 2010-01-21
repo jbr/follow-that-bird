@@ -4,7 +4,7 @@ class AdminSessionsController < ApplicationController
   def create
     password = params[:admin_session][:password]
     if password == AppConfig.admin_password
-      session[:password] = password
+      session[:admin_password] = password
       redirect_to root_url
     else
       flash[:notice] = "Incorrect password"
