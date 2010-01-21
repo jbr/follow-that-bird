@@ -4,6 +4,12 @@ class TweetTest < ActiveSupport::TestCase
   context 'with one saved tweet' do
     setup {@tweet = Tweet.create! :text => "hello world", :from_user => "rhok", :tweet_id => 1}
     
+    context 'to_s' do
+      should 'be the from user and the tweet' do
+        assert_to_s "rhok: hello world", @tweet
+      end
+    end
+    
     context 'another tweet with the same tweet_id' do
       setup {@dupe = Tweet.new :text => "maybe different", :from_user => "maybe different", :tweet_id => 1}
       

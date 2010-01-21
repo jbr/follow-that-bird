@@ -1,6 +1,10 @@
 class Tweet < ActiveRecord::Base
   validates_uniqueness_of :tweet_id
   
+  def to_s
+    "#{from_user}: #{text}"
+  end
+  
   def self.update_from_twitter
     count = 0
     Twitter::Search.new(Hashtag.search_string).since(Tweet.last.try(:tweet_id) || 0).each do |tweet|
