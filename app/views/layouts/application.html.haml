@@ -8,6 +8,8 @@
       = stylesheet_link_tag 'ie.css', :media => 'screen, projection'
   %body
     #header
+      - if flash[:notice].present?
+        .flash.notice= flash[:notice]
     #contents
       = yield
     #footer
