@@ -1,7 +1,8 @@
 class ApplicationController < ActionController::Base
+  include InheritedResources::DSL
+
   helper :all
   protect_from_forgery
-  include InheritedResources::DSL
   
   def admin_required
     admin? or access_denied
