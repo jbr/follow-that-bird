@@ -2,7 +2,6 @@ bundle_path "vendor/bundler_gems"
 
 gem 'rails', '2.3.5'
 gem 'twitter'
-gem 'inherited_resources', '>= 1.0'
 gem 'haml'
 gem 'compass'
 
