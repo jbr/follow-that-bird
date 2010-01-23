@@ -1,0 +1,25 @@
+sqlite3: &SQLITE
+  adapter: sqlite3
+  pool: 5
+  timeout: 5000
+
+mysql: &MYSQL
+  adapter: mysql
+  encoding: utf8
+  username: root
+  host: localhost
+
+development:
+  <<: *MYSQL
+  database: ftb_development
+  password: password
+
+test:
+  <<: *MYSQL
+  database: ftb_test
+  password: password
+
+production:
+  <<: *MYSQL
+  database: ftb_production
+  password: password
