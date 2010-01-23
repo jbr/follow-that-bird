@@ -1,5 +1,5 @@
 class Parser
-  attr_reader :text
+  attr_accessor :text
   attr_accessor :valid_keys
 
   def parse
