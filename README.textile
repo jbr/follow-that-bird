@@ -1,0 +1,20 @@
+h1. Follow that Bird, an implementation for Tweak-the-Tweet style emergency-response syntaxes.
+
+The goal of this project is to search Twitter for tweets matching admin-definable syntaxes,
+extract defined structure from those tweets, and publish/share that structure as quickly as possible.
+
+h2. To Do
+
+Please see the "issues page":http://github.com/jbr/follow-that-bird/issues for outstanding to-do items.
+
+h2. How to help
+
+Please:
+* fork
+* create topic branches
+* send pull requests
+* test your code
+
+h2. License
+
+This code is released under the MIT license.
