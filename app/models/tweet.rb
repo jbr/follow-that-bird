@@ -1,9 +1,40 @@
 class Tweet < ActiveRecord::Base
   validates_uniqueness_of :tweet_id
   
-  def to_s
-    "#{from_user}: #{text}"
+  # This is the method that the core view will use to 
+  # show tweets that still need triaging.
+  #
+  # We will need to tweak the variables here for best
+  # user experience.
+  def self.need_triage(except_ids = [])
+    self.recent(24.hours).
+         upvoted_less_than(5).
+         downvoted_less_than(5).
+         id_not_in(except_ids).
+         random.
+         limit(15)
   end
+  
+  named_scope :recent, lambda { |*since|
+    since = since.any? ? since.first : 2.days.ago
+    { :conditions => ["#{self.table_name}.created_at > ?", since]}
+  }
+  
+  named_scope :upvoted_less_than, lambda { |count| 
+    { :conditions => ["#{self.table_name}.upvote_count < ?", count]}
+  }
+  
+  named_scope :downvoted_less_than, lambda { |count| 
+    { :conditions => ["#{self.table_name}.downvote_count < ?", count] }
+  }
+  
+  named_scope :id_not_in, lambda { |ids|
+    { :conditions => ["#{self.table_name}.id not in (?)", ids] }
+  }
+  
+  named_scope :random, { :order => (AppConfig.database_random_method || 'random()') }
+  
+  named_scope :limit, lambda { |limit| { :limit => limit } }
   
   def self.update_from_twitter
     count = 0
@@ -81,6 +112,10 @@ class Tweet < ActiveRecord::Base
       end
       
     end
+  end
+  
+  def to_s
+    "#{from_user}: #{text}"
   end
   
   # Getter that converts from database-version of latitude (which is multiplied by 1,000,000)
