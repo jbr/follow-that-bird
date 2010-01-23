@@ -22,7 +22,7 @@ var FollowThatBird = {
         error: function(xhr, textStatus, errorThrown) {
             alert("Sorry, there was an error recording your vote.  Please try again later.");
         }
-    })
+    });
   }
 }
 
