@@ -11,3 +11,4 @@ vendor/bundler_gems/*
 !vendor/bunder_gems/ruby/1.8/cache/
 bin
 public/stylesheets/*
+config/app_config_example.yml
