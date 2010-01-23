@@ -7,22 +7,26 @@ class Parser
 
     current_key = "extra"
     current_value = ""
-    @text.split(/\s+/).each do |token|
-      if token =~ /^\#(.*)$/
-        hashtag = $1.downcase
-        if valid_keys.include?(hashtag)
-          pairs[current_key] = current_value.strip
-          current_key = hashtag
-          current_value = ""
-        else
-          current_value << " #{token}"
-        end
+
+    @text.split(/\#/).each do |part|
+      tokens = part.split(/\s+/)
+      hashtag = tokens.shift
+      next unless hashtag
+      
+      if known_hashtag?(hashtag)
+        pairs[current_key] = current_value.strip
+        current_key = hashtag
+        current_value = tokens.join(" ")
       else
-        current_value << " #{token}"
+        current_value << " \##{hashtag} #{tokens.join(" ")}"
       end
     end
     pairs[current_key] = current_value.strip
 
     return pairs
+  end
+
+  def known_hashtag?(tag)
+    valid_keys.include?(tag)
   end
 end
