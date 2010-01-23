@@ -5,21 +5,21 @@ h2. An implementation for Tweak-the-Tweet style emergency-response syntaxes.
 The goal of this project is to search Twitter for tweets matching admin-definable syntaxes,
 extract defined structure from those tweets, and publish/share that structure as quickly as possible.
 
-The goal is for this project to be a central repository for formatted tweets. I'm not sure how much this overlaps with Swift River, and I'd be happy to merge but want to make sure that as long as "tweak the tweet" is listed as a project, it is seen through. The idea of a flexible grammar for emergency tweets seems quite generically flexible, so I'm building with that as the core concept.
+The goal is for this project to be a central repository for formatted tweets.  We need to bear in mind extensibility and ease of building plug-in modules in the design and development of this app.
 
-This is in no way a complicated app, but I didn't see anything else that was doing a similar enough thing to feel comfortable building on it / merging.
+h2. Basic stuff
 
-Currently:
+*Currently:*
 * The model layer is somewhat developed.
 * Polling twitter search for tweets matching hashtags (script/runner Tweet.poll_indefinitely) exists.
 
-Not yet done:
+*Not yet:*
 * Views for adding syntaxes.
 * Extracting hashtags from syntaxes on a Syntax lifecycle callback (before_save, likely).  The tricky bit here will be removing hashtags before or after destroy but only if they aren't used by any other syntaxes.
 * Associate tweets that match (Syntax#match) a syntax with the matching syntax.
 * Extract the hash data returned by Syntax#match(tweet.text) and associate it with both the tweet and the syntax.
 
-h2. To Do
+h2. Larger To Dos
 
 Please see the "issues page":http://github.com/jbr/follow-that-bird/issues for outstanding to-do items.
 
