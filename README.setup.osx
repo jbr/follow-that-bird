@@ -1,0 +1,42 @@
+Getting things set up on OSX (Snow Leopard):
+
+These instructions use the default-installed ruby and sqlite3.
+
+1. Download the latest RubyGems (1.3.5) from
+http://rubyforge.org/projects/rubygems/.
+
+2. Install RubyGems:
+
+  sudo gem install ~/Downloads/rubygems-update-1.3.5.gem 
+
+3. Install and update bundler:
+
+  sudo gem update --system
+  sudo gem install bundler
+
+4. From this directory, install the gems:
+
+  sudo gem bundle
+
+5. Update config/database.yml:
+
+Replace all instances:
+
+-  <<: *MYSQL
++  adapter: sqlite3
+
+6. Update config/app_config.yml with your twitter account information.
+Also add a rate limiter if your account has limits.
+
+7. Set up the database:
+
+  rake
+  rake db:migrate
+
+8. Start polling Twitter:
+
+  script/runner Tweet.poll_indefinitely
+
+9. Start the webserver:
+
+  script/server
