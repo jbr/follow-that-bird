@@ -1,7 +1,7 @@
 .tweet{:id => tweet.element_id}
   .from_user= link_to_twitter_user tweet.from_user
   .text= tweet.text
-  %button.vote.up{:style => "border-color: white; background-color: #090;"}
+  %button.vote.up
     = image_tag("thumb_up.png", :alt => "Vote up", :title => "Vote up")
-  %button.vote.down{:style => "border-color: white; background-color: #900;"}
+  %button.vote.down
     = image_tag("thumb_down.png", :alt => "Vote down", :title => "Vote down")
