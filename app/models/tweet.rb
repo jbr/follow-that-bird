@@ -49,6 +49,33 @@ class Tweet < ActiveRecord::Base
     end
   end
   
+
+  def self.stream_from_twitter
+    twitter_username = AppConfig.twitter_username
+    twitter_password = AppConfig.twitter_password
+    
+    TweetStream::Client.new(twitter_username,twitter_password).track(Hashtag.search_string, :delete => Proc.new{ |status_id, user_id|}, :limit => Proc.new{ |skip_count| }) do |tweet|  
+      if tweet.geo.present? && tweet.geo.coordinates.present?
+        latitude, longitude = *tweet.geo.coordinates
+      else
+      latitude, longitude = nil, nil
+      end
+      if Tweet.create(:tweet_id => tweet[:id], 
+                :text => tweet.text, 
+                :from_user => tweet.user.screen_name, 
+                :time_of_tweet => tweet.created_at, 
+                :to_user => tweet.in_reply_to_screen_name,
+                :profile_image_url => tweet.user.profile_image_url,
+                :source => tweet.source,
+                :latitude => latitude,
+                :longitude => longitude
+                ).valid?
+        p tweet.text
+      end
+      
+    end
+  end
+  
   # Getter that converts from database-version of latitude (which is multiplied by 1,000,000)
   def latitude
     latitude_times_1000000.nil? ? nil : latitude_times_1000000 / 1_000_000.0
