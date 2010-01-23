@@ -1,4 +1,5 @@
 require 'test_helper'
+require 'sample_tweet_data'
 
 class ParserTest < ActiveSupport::TestCase
   context "Mirna Nazaire sample tweet" do
@@ -40,6 +41,32 @@ class ParserTest < ActiveSupport::TestCase
 
     should "parse extra properly" do
       assert_equal "\#haiti", @map["extra"]
+    end
+  end
+
+  context "Sample tweet data: " do
+    setup do
+      @parser = Parser.new
+      @parser.valid_keys = %w{offering loc num info need name haiti}
+    end
+
+    SampleTweetData::TEXTS.each do |text|
+      context text do
+        setup do
+          @parser.text = text
+          @map = @parser.parse
+        end
+
+        should "parse cleanly" do
+          assert @map
+        end
+
+        if text =~ /\#loc[^\#]*[^\s\#]/
+          should "contain a loc value" do
+            assert !@map["loc"].blank?
+          end
+        end
+      end
     end
   end
 end
