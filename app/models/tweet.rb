@@ -16,7 +16,9 @@ class Tweet < ActiveRecord::Base
   end
   
   
-  def self.poll_indefinitely(pause = 2)
+  def self.poll_indefinitely()
+    polls_per_second = AppConfig.twitter_polls_per_hour / 60.0 / 60.0
+    pause = 1.0 / polls_per_second
     loop do
       update_from_twitter
       sleep pause

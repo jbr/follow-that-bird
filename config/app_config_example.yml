@@ -1,3 +1,4 @@
 twitter_username: username
 twitter_password: password
 admin_password: admin-password
+twitter_polls_per_hour: 100
