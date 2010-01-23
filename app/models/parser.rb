@@ -2,10 +2,6 @@ class Parser
   attr_reader :text
   attr_accessor :valid_keys
 
-  def initialize(text)
-    @text = text
-  end
-
   def parse
     pairs = {}
 
