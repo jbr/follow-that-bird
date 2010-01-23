@@ -31,8 +31,15 @@ class Tweet < ActiveRecord::Base
       puts "WARNING: You probably missed tweets with this poll. If possible, speed up your poll rate"
     end
   end
-  
-  
+
+  def add_upvote
+    self.upvote_count += 1
+  end
+
+  def add_downvote
+    self.downvote_count += 1
+  end
+
   def self.poll_indefinitely()
     polls_per_second = AppConfig.twitter_polls_per_hour / 60.0 / 60.0
     desired_pause = 1.0 / polls_per_second

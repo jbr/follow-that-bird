@@ -1,6 +1,10 @@
 .tweet{:id => tweet.element_id}
   - if tweet.profile_image_url.present?
     = image_tag(tweet.profile_image_url, :class => 'avatar')
+  %button.vote.up
+    = image_tag("thumb_up.png", :alt => "Vote up", :title => "Vote up")
+  %button.vote.down
+    = image_tag("thumb_down.png", :alt => "Vote down", :title => "Vote down")
   .content
     = link_to_twitter_user(tweet.from_user) + ': ' + tweet.text
     .meta
