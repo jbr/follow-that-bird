@@ -28,8 +28,19 @@ class Tweet < ActiveRecord::Base
     end
     puts "added #{count} (total: #{Tweet.count})" if count > 0
   end
-  
-  
+
+  def self.add_upvote(tweet_id)
+    record = find(:first, :conditions => "tweet_id = #{tweet_id}")
+    record.upvote_count += 1
+    record.save!()
+  end
+
+  def self.add_downvote(tweet_id)
+    record = find(:first, :conditions => "tweet_id = #{tweet_id}")
+    record.downvote_count += 1
+    record.save!()
+  end
+
   def self.poll_indefinitely()
     polls_per_second = AppConfig.twitter_polls_per_hour / 60.0 / 60.0
     pause = 1.0 / polls_per_second
