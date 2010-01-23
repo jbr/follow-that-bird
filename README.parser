@@ -1,0 +1,26 @@
+The Parser class (app/models/parser.rb) is a generic parser for EPIC-style
+tweets.  You specify the text of a tweet and a list of hash tags to use as
+"keys" (i.e. data you want to specifically handle), and it will give you a
+Hash containing a the tweet's context split out into a key/value mapping.
+
+Example:
+
+@parser = Parser.new
+@parser.valid_keys = %w{loc offer contact}
+@parser.text = "#haiti #offer hospital #Loc 75 miles from PaP #contact Tim 413-241-6526 or ttraynor1948@gmail.com"
+
+@map = @parser.parse
+# @map should be:
+# {
+#    "offer" => "hospital",
+#    "loc" => "75 miles from PaP"
+#    "contact" => "Tim 413-241-6526 or ttraynor1948@gmail.com"
+#    "extra" => "#haiti"
+# }
+
+--------------------
+
+An automated test suite is available in test/units/parser_test.rb.
+Additionally, a corpus of real data collected by Wyatt is available in
+test/sample_tweet_data.rb, which is used by part of the unit test suite to
+verify that these parse without breaking.
