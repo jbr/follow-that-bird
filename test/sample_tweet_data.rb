@@ -5,6 +5,8 @@ class SampleTweetData
   # random tweets that happen to have #haiti in them.
 
   TEXTS = [
+    "Mario sort ses griffes : \" c'est plutôt de vrais débats et de vrais échanges que nous avons besoin...\" 1/2",
+    "@MrsJOnasNiick hey Shandou! si t'en a toujours besoin son n° c'est 0627722470",
     "#haiti pls use these data hashtags: #name [first last] #loc [address, intersection] #num [amount] #contact [@ or #]",
     "@ShaunKing #Haiti RT @internethaiti #trapped 6 #num 6 people ALIVE #loc Rue Du Centre PaP Building Napolitain #coor 18.544833,-72.342889",
     "@ShaunKing #Haiti RT @internethaiti #trapped 6 #num 6 people ALIVE #loc Rue Du Centre PaP Building Napolitain #coor 18.544833,-72.342889",
