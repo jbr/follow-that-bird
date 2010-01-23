@@ -1,3 +1,7 @@
+Parser class
+Nat Budin and Wyatt Greene (@natbudin and @techiferous)
+--------------------
+
 The Parser class (app/models/parser.rb) is a generic parser for EPIC-style
 tweets.  You specify the text of a tweet and a list of hash tags to use as
 "keys" (i.e. data you want to specifically handle), and it will give you a
