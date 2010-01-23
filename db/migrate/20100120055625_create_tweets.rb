@@ -10,8 +10,8 @@ class CreateTweets < ActiveRecord::Migration
       t.string :profile_image_url
       t.integer :longitude_times_1000000
       t.integer :latitude_times_1000000
-      t.integer :upvote
-      t.integer :downvote
+      t.integer :upvote_count, :default => 0
+      t.integer :downvote_count, :default => 0
       t.timestamps
     end
   end
