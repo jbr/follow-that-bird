@@ -6,11 +6,10 @@ class Tweet < ActiveRecord::Base
   #
   # We will need to tweak the variables here for best
   # user experience.
-  def self.need_triage(except_ids = [])
+  def self.need_triage
     self.recent(24.hours).
          upvoted_less_than(5).
          downvoted_less_than(5).
-         id_not_in(except_ids).
          random.
          limit(15)
   end
