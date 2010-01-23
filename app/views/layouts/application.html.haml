@@ -10,6 +10,6 @@
     #header
       - if flash[:notice].present?
         .flash.notice= flash[:notice]
-    #contents
-      = yield
+    #contents-background
+      #contents= yield
     #footer
