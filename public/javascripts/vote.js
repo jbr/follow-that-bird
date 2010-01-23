@@ -1,4 +1,5 @@
-function voteClicked() {
+var FollowThatBird = {
+  voteClicked: function() {
     var tweetDiv = $(this).parents('.tweet');
     var tweetDivId = tweetDiv.attr('id');
     var matcher = /tweet_(\d+)/;
@@ -21,9 +22,10 @@ function voteClicked() {
         error: function(xhr, textStatus, errorThrown) {
             alert("Sorry, there was an error recording your vote.  Please try again later.");
         }
-    });
+    })
+  }
 }
 
 $(function() {
-    $('.tweet .vote').bind('click', voteClicked);
+    $('.tweet .vote').bind('click', FollowThatBird.voteClicked);
 });
