@@ -2,8 +2,7 @@ h1. Follow that Bird
 
 h2. An implementation for Tweak-the-Tweet style emergency-response syntaxes.
 
-The goal of this project is to search Twitter for tweets matching admin-definable syntaxes,
-extract defined structure from those tweets, and publish/share that structure as quickly as possible.
+The goal of this project is to search Twitter for tweets matching admin-definable syntaxes, extract defined structure from those tweets, and publish/share that structure as quickly as possible.
 
 The goal is for this project to be a central repository for formatted tweets.  We need to bear in mind extensibility and ease of building plug-in modules in the design and development of this app.
 
