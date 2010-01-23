@@ -1,4 +1,6 @@
-h1. Follow that Bird, an implementation for Tweak-the-Tweet style emergency-response syntaxes.
+h1. Follow that Bird
+
+h2. An implementation for Tweak-the-Tweet style emergency-response syntaxes.
 
 The goal of this project is to search Twitter for tweets matching admin-definable syntaxes,
 extract defined structure from those tweets, and publish/share that structure as quickly as possible.
