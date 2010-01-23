@@ -7,14 +7,11 @@ class SampleTweetData
   TEXTS = [
     "#haiti pls use these data hashtags: #name [first last] #loc [address, intersection] #num [amount] #contact [@ or #]",
     "@ShaunKing #Haiti RT @internethaiti #trapped 6 #num 6 people ALIVE #loc Rue Du Centre PaP Building Napolitain #coor 18.544833,-72.342889",
-    "@ShaunKing #Haiti RT @internethaiti #trapped 6 #num 6 people ALIVE #loc Rue Du Centre PaP Building Napolitain #coor 18.544833,-72.342889",
     "#Haiti RT @internethaiti #trapped 6 #num 6 people ALIVE #loc Rue Du Centre PaP - Building Napolitain #coor 18.544833,-72.342889",
     "RT @Kenold UPDATE: WATER filtration transport 2 PaP OK, need 2 find final #loc in #Haiti. where is water most needed - Jacmel? pls RT",
     "#haiti #open #shelter 2 kid centers #loc San Jose Recovery & Good Sam Hosp, Jimani, DR border #src World Vision int'l",
     "#haiti #need med supplies: Lovenox, 4 autoclaves #loc Hop Sacré-Coeur Milot #status blog entry Jan 22",
     "#haiti pls tweet in format: #haiti #open [store/hospital/bank/etc] #loc [location] #date [day/time]",
-    "#haiti #offer hospital #Loc 75 miles from PaP #contact Tim 413-241-6526 or ttraynor1948@gmail.com",
-    "#haiti #offer hospital #Loc 75 miles from PaP #contact Tim 413-241-6526 or ttraynor1948@gmail.com",
     "RT @VRWCTexan #Haiti #open Hospital Sacre Coeur #loc Milot 904-223-7233 904-223-7233: full-svs 2ORs, trauma, ortho team waiting for patients",
     "RT @Meira_Davi: #Haiti Desperate need for #shelter: fam w/ kids in #loc Bon Repos, near LaPlaine. Rural area #hatiqua #redcross @conneally",
     "RT #haiti @InternetHaiti: RT @yveno76: #NEED food and water #loc BAUSSAN STREET #9 (500 people) Lat. 18.53416 Lon. -72.32425 via @Ushahidi",
@@ -52,7 +49,6 @@ class SampleTweetData
     "RT @sophiabliu: #haiti CHF #have emergency kits for 1000 families include shelters, kitchen sets, mosquito nets, jerry cans, 4 large tens for hospital rooms",
     "RT @epiccolorado: we #have some water to share with #loc Bresma Orphanage, but need contact info. #Haiti #con @BHMhaiti Can anyone help?",
     "@USAforHaiti #Haiti Careca Breda Male-Port Au Prince #imok #>1deceased-crying thank You for reporting this.contact be processed",
-    "#Haiti #imok Bathelmy Augustin #info Adult Male wants family in Miami, FL to know he's alive - has water. #src @sgtkjohn",
     "@HaitiGoodNews #haiti #imok Ulrick Alexandre #src @sgtkjohn",
     "#Haiti #imok Bathelmy Augustin #info Adult Male wants family in Miami, FL to know he's alive - has water. #src @sgtkjohn",
     "RT @ungaro: #HAITI #RUOK: Domnq V. Lacombe seeks: Jacqs Joubert Goutier (CAMEP), Marianne Jsph VanEyll, Marie NicoleRose BastienCosyns, Antne Clerfond",
@@ -68,6 +64,6 @@ class SampleTweetData
     "RT @VRWCTexan #Haiti #open Hospital Sacre Coeur #loc Milot 904-223-7233 904-223-7233: full-svs 2ORs, trauma, ortho team waiting for patients",
     "RT@yveno76:#open redcross mobile health clinics#loc Carrefour de Feuille, Croix deprez + Delmar 45 PaP #src @conneally 21 Jan 01.00pm #HAITI",
     "#Haiti. 2nd quake an hr ago. 6.0 magnitude. Little info available yet #closed Twitter server down."
-  ]
+  ].uniq
 
 end
