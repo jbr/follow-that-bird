@@ -5,7 +5,12 @@ class Hashtag < ActiveRecord::Base
     "##{tag}"
   end
   
+  def with_exclusion
+    "-#{tag}"
+  end
+  
   def self.search_string
-    all.map(&:with_hash).join(" OR ")
+    Hashtag.find_all_by_include(true).map(&:with_hash).join(" OR ") + " " +
+    Hashtag.find_all_by_include(false).map(&:with_exclusion).join(" ")
   end
 end

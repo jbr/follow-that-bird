@@ -2,7 +2,7 @@ class CreateHashtags < ActiveRecord::Migration
   def self.up
     create_table :hashtags do |t|
       t.string :tag
-
+      t.boolean :include
       t.timestamps
     end
   end

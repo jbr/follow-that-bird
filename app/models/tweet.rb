@@ -27,15 +27,25 @@ class Tweet < ActiveRecord::Base
       end
     end
     puts "added #{count} (total: #{Tweet.count})" if count > 0
+    if count >= 100
+      puts "WARNING: You probably missed tweets with this poll. If possible, speed up your poll rate"
+    end
   end
   
   
   def self.poll_indefinitely()
     polls_per_second = AppConfig.twitter_polls_per_hour / 60.0 / 60.0
-    pause = 1.0 / polls_per_second
+    desired_pause = 1.0 / polls_per_second
     loop do
+      time_at_start = Time.now
       update_from_twitter
-      sleep pause
+      poll_duration = Time.now - time_at_start
+      if desired_pause - poll_duration > 0 
+        actual_pause = desired_pause - poll_duration
+      else
+        actual_pause = 0
+      end
+      sleep actual_pause 
     end
   end
   
