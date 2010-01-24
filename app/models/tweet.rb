@@ -7,7 +7,7 @@ class Tweet < ActiveRecord::Base
   # We will need to tweak the variables here for best
   # user experience.
   def self.need_triage
-    self.recent(24.hours).
+    self.recent(24.hours.ago).
          upvoted_less_than(5).
          downvoted_less_than(5).
          random.
