@@ -1,5 +1,6 @@
 class Tweet < ActiveRecord::Base
   validates_uniqueness_of :tweet_id
+  @@last_sent = 1
   
   def to_s
     "#{from_user}: #{text}"
@@ -47,6 +48,12 @@ class Tweet < ActiveRecord::Base
       end
       sleep actual_pause 
     end
+  end
+
+  def self.pull_next
+    tt = Tweet.find((@@last_sent..AppConfig.publish_tweets_per_post).to_a)
+    @@last_sent += AppConfig.publish_tweets_per_post
+    PushMessage.new(tt).to_xml
   end
   
   # Getter that converts from database-version of latitude (which is multiplied by 1,000,000)
