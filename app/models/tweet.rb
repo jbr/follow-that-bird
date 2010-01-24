@@ -28,6 +28,7 @@ class Tweet < ActiveRecord::Base
   }
   
   named_scope :id_not_in, lambda { |ids|
+    ids = '' if ids.length == 0  # so we don't end up doing 'not in (NULL)'
     { :conditions => ["#{self.table_name}.id not in (?)", ids] }
   }
   
