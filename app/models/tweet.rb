@@ -2,6 +2,8 @@ class Tweet < ActiveRecord::Base
   validates_uniqueness_of :tweet_id
   @@last_sent = 1
   
+  has_many :taggings, :dependent => :destroy
+
   def to_s
     "#{from_user}: #{text}"
   end

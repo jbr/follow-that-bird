@@ -1,3 +1,5 @@
 .tweet{:id => tweet.element_id}
+  %img{:src => tweet.profile_image_url, :style => "overflow:auto;" }
   .from_user= link_to_twitter_user tweet.from_user
   .text= tweet.text
+  .date= tweet.time_of_tweet
