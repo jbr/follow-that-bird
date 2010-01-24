@@ -2,14 +2,31 @@ class Syntax < ActiveRecord::Base
   validate :no_duplicate_keys
   cattr_accessor :meta_syntax
   @@meta_syntax = /\{\{(.+?)\}\}/
+
+  has_many :taggings
   
   def match(string)
-    values = as_regex.match(string).captures
+    matches = as_regex.match(string)
+    return nil unless matches
+    values = matches.captures
     keys.inject({}) do |hash, key|
       hash.merge key => values.shift
     end
   end
   
+  def self.tag(tweet)
+    Syntax.find(:all).each { |s|
+      s.build_tags(tweet)
+    }
+  end
+
+  def build_tags(tweet)
+    matches = match(tweet.text)
+    if matches
+      matches.each { |key, value| Tagging.create(:syntax => self, :tweet => tweet, :value => value, :field => key.to_s) }
+    end
+  end
+
   def as_regex
     Regexp.new format.gsub(Syntax.meta_syntax, "(.+)")
   end
