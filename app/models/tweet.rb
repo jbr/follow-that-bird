@@ -9,7 +9,7 @@ class Tweet < ActiveRecord::Base
   
   def self.update_from_twitter
     count = 0
-    Twitter::Search.new(Hashtag.search_string).since(0).per_page(100).each do |tweet|
+    Twitter::Search.new(Hashtag.search_string).since(Tweet.last.try(:tweet_id) || 0).per_page(100).each do |tweet|
       if tweet.geo.present? && tweet.geo.coordinates.present?
         latitude, longitude = *tweet.geo.coordinates
       else
