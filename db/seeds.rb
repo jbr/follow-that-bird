@@ -5,4 +5,4 @@
 #   
 #   cities = City.create([{ :name => 'Chicago' }, { :name => 'Copenhagen' }])
 #   Major.create(:name => 'Daley', :city => cities.first)
-Hashtag.create(:tag => "haiti")
+Hashtag.find_or_create_by_tag("Haiti")

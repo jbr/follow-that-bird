@@ -1,3 +1,6 @@
-.tweets
+%ul.tweets
   - for tweet in @tweets
     = render :partial => tweet
+#show_more_tweets
+  Thanks for voting. Want to
+  = link_to('see some more', '') + '?'

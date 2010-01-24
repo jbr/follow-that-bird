@@ -13,6 +13,7 @@ ActiveRecord::Schema.define(:version => 20100120063108) do
 
   create_table "hashtags", :force => true do |t|
     t.string   "tag"
+    t.boolean  "include",    :default => true, :null => false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
