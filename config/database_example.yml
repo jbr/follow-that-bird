@@ -12,7 +12,7 @@ mysql: &MYSQL
 development:
   <<: *MYSQL
   database: ftb_development
-  password: password
+  password: 
 
 test:
   <<: *MYSQL
