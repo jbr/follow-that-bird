@@ -9,10 +9,11 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100123155736) do
+ActiveRecord::Schema.define(:version => 20100123235759) do
 
   create_table "hashtags", :force => true do |t|
     t.string   "tag"
+    t.boolean  "include",    :default => true, :null => false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
