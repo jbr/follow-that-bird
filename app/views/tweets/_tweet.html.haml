@@ -1,5 +1,15 @@
-.tweet{:id => tweet.element_id}
-  %img{:src => tweet.profile_image_url, :style => "overflow:auto;" }
-  .from_user= link_to_twitter_user tweet.from_user
-  .text= tweet.text
-  .date= tweet.time_of_tweet
+%li.tweet{:id => tweet.element_id}
+  - if tweet.profile_image_url.present?
+    = image_tag(tweet.profile_image_url, :class => 'avatar')
+  %button.vote.up
+    = image_tag("thumb_up.png", :alt => "Important!", :title => "Important!")
+  %button.vote.down
+    = image_tag("thumb_down.png", :alt => "Not important.", :title => "Not important.")
+  .content
+    = link_to_twitter_user(tweet.from_user) + ': ' + tweet.text
+    .meta
+      Tweeted
+      - if tweet.time_of_tweet.present?
+        = time_ago_in_words(tweet.time_of_tweet)
+        ago
+  .clear

@@ -1,0 +1,23 @@
+Instructions for Ubuntu (~9.10)
+===============================
+
+Step one is apt-getting the relevant ubuntu packages.  Build-essential is quite large, but is needed to complie sqlite3-ruby
+
+    sudo apt-get install rubygems libsqlite3-ruby libopenssl-ruby1.8 sqlite3 ruby1.8 build-essential libsqlite3-dev
+
+Step two involves using ruby's gem system to install bundler (which takes care of most gems as part of the rails project)
+
+    sudo gem1.8 install bundler sqlite3-ruby
+
+Step three, allow bundler to grab the rest of your gems
+
+    sudo gem1.8 bundler
+
+Step four, make sure your gems are in your executable path.
+
+    export PATH=/var/lib/gems/1.8/bin:$PATH
+
+
+Lastly, follow the README.setup.osx for any other config issues.
+
+# TODO: abstract README.setup.osx and this document to README.setup
