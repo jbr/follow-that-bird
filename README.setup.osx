@@ -37,6 +37,10 @@ Also add a rate limiter if your account has limits.
 
   script/runner Tweet.poll_indefinitely
 
-9. Start the webserver:
+9. Start pushing xml posts (hardwired to http://localhost:3000 for the time being)
+
+	script/runner Push.push_indefinitely
+
+10. Start the webserver:
 
   script/server

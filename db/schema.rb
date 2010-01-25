@@ -34,8 +34,8 @@ ActiveRecord::Schema.define(:version => 20100124014038) do
   end
 
   create_table "tweets", :force => true do |t|
-    t.string   "text",                    :null => false
-    t.string   "from_user",               :null => false
+    t.string   "text",                                   :null => false
+    t.string   "from_user",                              :null => false
     t.integer  "tweet_id"
     t.datetime "time_of_tweet"
     t.string   "to_user"
@@ -43,6 +43,8 @@ ActiveRecord::Schema.define(:version => 20100124014038) do
     t.string   "profile_image_url"
     t.integer  "longitude_times_1000000"
     t.integer  "latitude_times_1000000"
+    t.integer  "upvote_count",            :default => 0
+    t.integer  "downvote_count",          :default => 0
     t.datetime "created_at"
     t.datetime "updated_at"
   end
