@@ -10,6 +10,7 @@ class TweetVotesController < ApplicationController
     end
     
     @tweet.save
+    self.tweet_ids_voted_on << @tweet.id
     head :ok
   end
 end
