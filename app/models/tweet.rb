@@ -1,5 +1,12 @@
 class Tweet < ActiveRecord::Base
   validates_uniqueness_of :tweet_id
+  @@last_sent = 1
+  
+  has_many :taggings, :dependent => :destroy
+
+  def to_s
+    "#{from_user}: #{text}"
+  end
   
   # This is the method that the core view will use to 
   # show tweets that still need triaging.
@@ -85,6 +92,12 @@ class Tweet < ActiveRecord::Base
       end
       sleep actual_pause 
     end
+  end
+
+  def self.pull_next
+    tt = Tweet.find((@@last_sent..AppConfig.publish_tweets_per_post).to_a)
+    @@last_sent += AppConfig.publish_tweets_per_post
+    PushMessage.new(tt).to_xml
   end
   
 
