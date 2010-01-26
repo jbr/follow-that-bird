@@ -9,8 +9,11 @@ class TweetVotesController < ApplicationController
       @tweet.add_downvote
     end
     
-    @tweet.save
-    self.tweet_ids_voted_on << @tweet.id
-    head :ok
+    if @tweet.save
+      self.tweet_ids_voted_on << @tweet.id
+      head :ok
+    else
+      render :text => @tweet.errors.full_messages.join("\n"), :status => :unprocessable_entity
+    end
   end
 end
