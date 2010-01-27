@@ -36,7 +36,6 @@ ActiveRecord::Schema.define(:version => 20100124014038) do
   create_table "tweets", :force => true do |t|
     t.string   "text",                                   :null => false
     t.string   "from_user",                              :null => false
-    t.integer  "tweet_id"
     t.datetime "time_of_tweet"
     t.string   "to_user"
     t.string   "source"
@@ -47,6 +46,7 @@ ActiveRecord::Schema.define(:version => 20100124014038) do
     t.integer  "downvote_count",          :default => 0
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "tweet_id"
   end
 
 end
