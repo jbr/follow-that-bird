@@ -10,9 +10,11 @@ class PushMessage
     xml << tweets = Nokogiri::XML::Node.new("tweets",xml)
     tweet_collection.each do |t|
       tweets << tweet = Nokogiri::XML::Node.new("tweet",xml)
-      ["from_user", "tweet_id", "time_of_tweet", "to_user", "source", "profile_image_url", "longitude_times_1000000", "latitude_times_1000000"].each do |cc|
-        tweet.set_attribute(cc,t.send(cc).to_s)
-      end
+      %w(
+        from_user tweet_id time_of_tweet to_user
+        source profile_image_url longitude_times_1000000
+        latitude_times_1000000
+      ).each { |cc| tweet.set_attribute(cc, t.send(cc).to_s) }
       tweet.content = t.text
     end
     xml.to_s

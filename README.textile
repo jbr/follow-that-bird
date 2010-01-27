@@ -12,13 +12,7 @@ h2. Basic stuff
 * The model layer is somewhat developed.
 * Polling twitter search for tweets matching hashtags (script/runner Tweet.poll_indefinitely) exists.
 
-*Not yet:*
-* Views for adding syntaxes.
-* Extracting hashtags from syntaxes on a Syntax lifecycle callback (before_save, likely).  The tricky bit here will be removing hashtags before or after destroy but only if they aren't used by any other syntaxes.
-* Associate tweets that match (Syntax#match) a syntax with the matching syntax.
-* Extract the hash data returned by Syntax#match(tweet.text) and associate it with both the tweet and the syntax.
-
-h2. Larger To Dos
+h2. To Dos
 
 Please see the "issues page":http://github.com/jbr/follow-that-bird/issues for outstanding to-do items.
 

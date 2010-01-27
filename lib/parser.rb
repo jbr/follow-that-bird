@@ -23,7 +23,7 @@ class Parser
     end
     pairs[current_key] = current_value.strip
 
-    return pairs
+    pairs
   end
 
   def known_hashtag?(tag)

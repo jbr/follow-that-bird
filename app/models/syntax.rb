@@ -15,15 +15,14 @@ class Syntax < ActiveRecord::Base
   end
   
   def self.tag(tweet)
-    Syntax.find(:all).each { |s|
-      s.build_tags(tweet)
-    }
+    Syntax.all.each { |syntax| syntax.create_tags_for tweet }
   end
 
-  def build_tags(tweet)
-    matches = match(tweet.text)
-    if matches
-      matches.each { |key, value| Tagging.create(:syntax => self, :tweet => tweet, :value => value, :field => key.to_s) }
+  def create_tags_for(tweet)
+    if matches = match(tweet.text)
+      matches.each do |key, value|
+        Tagging.create :syntax => self, :tweet => tweet, :value => value, :field => key.to_s
+      end
     end
   end
 
