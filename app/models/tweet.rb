@@ -43,31 +43,35 @@ class Tweet < ActiveRecord::Base
   
   named_scope :limit, lambda { |limit| { :limit => limit } }
   
+  def self.create_from(tweet)
+    if tweet.geo.present? && tweet.geo.coordinates.present?
+      latitude, longitude = *tweet.geo.coordinates
+    else
+      latitude, longitude = nil, nil
+    end
+    
+    create additional_options.merge(
+      :tweet_id => tweet.id, 
+      :text => tweet.text, 
+      :from_user => tweet.from_user, 
+      :time_of_tweet => tweet.created_at, 
+      :to_user => tweet.to_user,
+      :profile_image_url => tweet.profile_image_url,
+      :source => tweet.source,
+      :latitude => latitude,
+      :longitude => longitude
+    )
+  end
+  
   def self.update_from_twitter
     count = 0
     Twitter::Search.new(Hashtag.search_string).since(Tweet.last.try(:tweet_id) || 0).per_page(100).each do |tweet|
-      if tweet.geo.present? && tweet.geo.coordinates.present?
-        latitude, longitude = *tweet.geo.coordinates
-      else
-        latitude, longitude = nil, nil
-      end
-      if Tweet.create(:tweet_id => tweet.id, 
-                      :text => tweet.text, 
-                      :from_user => tweet.from_user, 
-                      :time_of_tweet => tweet.created_at, 
-                      :to_user => tweet.to_user,
-                      :profile_image_url => tweet.profile_image_url,
-                      :source => tweet.source,
-                      :latitude => latitude,
-                      :longitude => longitude
-                      ).valid?
+      if Tweet.create_from(tweet).valid?
         count += 1
       end
     end
     puts "added #{count} (total: #{Tweet.count})" if count > 0
-    if count >= 100
-      puts "WARNING: You probably missed tweets with this poll. If possible, speed up your poll rate"
-    end
+    puts missed_tweet_warning if count >= 100
   end
 
   def add_upvote
@@ -105,25 +109,10 @@ class Tweet < ActiveRecord::Base
     twitter_username = AppConfig.twitter_username
     twitter_password = AppConfig.twitter_password
     
-    TweetStream::Client.new(twitter_username,twitter_password).track(Hashtag.search_string, :delete => Proc.new{ |status_id, user_id|}, :limit => Proc.new{ |skip_count| }) do |tweet|  
-      if tweet.geo.present? && tweet.geo.coordinates.present?
-        latitude, longitude = *tweet.geo.coordinates
-      else
-      latitude, longitude = nil, nil
-      end
-      if Tweet.create(:tweet_id => tweet[:id], 
-                :text => tweet.text, 
-                :from_user => tweet.user.screen_name, 
-                :time_of_tweet => tweet.created_at, 
-                :to_user => tweet.in_reply_to_screen_name,
-                :profile_image_url => tweet.user.profile_image_url,
-                :source => tweet.source,
-                :latitude => latitude,
-                :longitude => longitude
-                ).valid?
+    TweetStream::Client.new(twitter_username,twitter_password).track(Hashtag.search_string, :delete => Proc.new{ |status_id, user_id|}, :limit => Proc.new{ |skip_count| }) do |tweet|
+      if Tweet.create_from(tweet).valid?
         p tweet.text
       end
-      
     end
   end
   
@@ -151,4 +140,8 @@ class Tweet < ActiveRecord::Base
     self.longitude_times_1000000 = long.nil? ? nil : long * 1_000_000.0
   end
   
+  private
+  def missed_tweet_warning
+    "WARNING: You probably missed tweets with this poll. If possible, speed up your poll rate"
+  end
 end
