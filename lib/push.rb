@@ -18,6 +18,6 @@ class Push
   
   def self.push_once
     puts "sending xml message"
-    HTTParty.post("http://localhost:3000", :body=>Tweet.pull_next)
+    HTTParty.post("http://localhost:3000", :body => Tweet.pull_next)
   end
 end
